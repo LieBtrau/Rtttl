@@ -1,18 +1,18 @@
 ###################################
-# Syntax Coloring Map For toneAC
+# Syntax Coloring Map For Rtttl
 ###################################
 
 ###################################
 # Datatypes (KEYWORD1)
 ###################################
+Rtttl		KEYWORD1
 
 ###################################
 # Methods and Functions (KEYWORD2)
 ###################################
 
-Rtttl	KEYWORD2
-play	KEYWORD2
-playMelody	KEYWORD2
+play		KEYWORD2
+updateMelody	KEYWORD2
 
 ###################################
 # Constants (LITERAL1)

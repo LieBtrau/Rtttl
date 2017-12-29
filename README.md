@@ -1,27 +1,17 @@
 # Rtttl
-This is an adaptation of a sample scketch from tone library By Brett Hagman,
-it uses Rtttl which is a compact format por mono ringtones.
+This code allows to play monophonic Nokia ringtones on your Arduino.
+This is an adaptation of a sample sketch from the [tone library](https://code.google.com/archive/p/rogue-code/wikis/ToneLibraryDocumentation.wiki) by Brett Hagman, and the Arduino RTTTL-player by [Spica](https://github.com/spicajames/Rtttl).
 
 ## Why Rtttl?
-It's compact, its just a string you can paste in your code, no array
-construction with frequencies and durations. You can change the octave and tempo
-fast and easy.
+* Compact
+* its just a string you can paste in your code.  The string is stored to flash, so it doesn't eat up your RAM.
+* You can change the octave and tempo fast and easy.
 
-## What change from the original scketch?
-This uses [TimerFreetone](http://forum.arduino.cc/index.php?topic=235774.0) by Tim Eckel ,
-so it can be used with LedControl, Servos and other libraries that requiere
-the use of timers.
-
-Also uses [Flash](http://arduiniana.org/libraries/flash/) library by Mikal Hart
-to store the strings in PROGMEM this helps reducing the RAM use, wich is essential
-when you use complex code or need to play several melodies.
-
-Delays and while loop has been removed so it could plays asynchronously using the
-technique described in  [BlinkWithoutDelay](https://www.arduino.cc/en/Tutorial/BlinkWithoutDelay)
-so you can blink leds, move servos, checking inputs while the music plays.
+## What change from the original library?
+* Compatible with STM32-platforms
+* Allows non-blocking music playing
+* String storage in flash area
+* Detection of song completion
 
 ## More info
-- https://en.wikipedia.org/wiki/Ring_Tone_Transfer_Language
-- https://code.google.com/archive/p/rogue-code/wikis/ToneLibraryDocumentation.wiki
-
-\* If you know the original author please let me know.
+* [Wikipedia](https://en.wikipedia.org/wiki/Ring_Tone_Transfer_Language)
